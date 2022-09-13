@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Config>
+	<ExperimentName>WalkingAgentExperiment</ExperimentName>
+	<PopulationSize>100</PopulationSize>
+	<SpecieCount>15</SpecieCount>
+	<Activation>
+		<Scheme>Acyclic</Scheme>
+	</Activation>
+	<ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+	<ComplexityThreshold>20</ComplexityThreshold>
+	<Description>Rig learns to walk.</Description>
+</Config>
