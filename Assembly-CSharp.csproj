@@ -181,6 +181,7 @@
     <Compile Include="Assets\Packages\UnitySharpNEAT-main\Packages\UnitySharpNEAT\SharpNEAT\Genomes\Neat\ConnectionMutationInfo.cs" />
     <Compile Include="Assets\Packages\UnitySharpNEAT-main\Packages\UnitySharpNEAT\SharpNEAT\Decoders\HyperNeat\SubstrateConnection.cs" />
     <Compile Include="Assets\Packages\UnitySharpNEAT-main\Packages\UnitySharpNEAT\SharpNEAT\SpeciationStrategies\RandomClusteringStrategy.cs" />
+    <Compile Include="Assets\Scripts\GuiController.cs" />
     <Compile Include="Assets\Packages\UnitySharpNEAT-main\Packages\UnitySharpNEAT\SharpNEAT\Decoders\HyperNeat\SubstrateNodeSet.cs" />
     <Compile Include="Assets\Packages\UnitySharpNEAT-main\Packages\UnitySharpNEAT\SharpNEAT\Utility\ZigguratGaussianSampler.cs" />
     <Compile Include="Assets\Packages\UnitySharpNEAT-main\Packages\UnitySharpNEAT\SharpNEAT\Core\IPhenomeEvaluator.cs" />

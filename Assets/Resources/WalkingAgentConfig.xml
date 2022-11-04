@@ -2,12 +2,12 @@
 
 <Config>
 	<ExperimentName>WalkingAgentExperiment</ExperimentName>
-	<PopulationSize>100</PopulationSize>
+	<PopulationSize>50</PopulationSize>
 	<SpecieCount>15</SpecieCount>
 	<Activation>
 		<Scheme>Acyclic</Scheme>
 	</Activation>
-	<ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
-	<ComplexityThreshold>20</ComplexityThreshold>
+	<ComplexityRegulationStrategy>Absolute</ComplexityRegulationStrategy>
+	<ComplexityThreshold>200</ComplexityThreshold>
 	<Description>Rig learns to walk.</Description>
 </Config>

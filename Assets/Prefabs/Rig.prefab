@@ -42,7 +42,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763444292447538801}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4a750fc4471407a4fa43fb99e793219b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -56,9 +56,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763444292447538801}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 5
   m_Drag: 0.05
-  m_AngularDrag: 0.05
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -222,9 +222,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763444292472722393}
   serializedVersion: 2
-  m_Mass: 30
+  m_Mass: 20
   m_Drag: 0.05
-  m_AngularDrag: 0.05
+  m_AngularDrag: 100
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -346,7 +346,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763444292821247288}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4a750fc4471407a4fa43fb99e793219b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -360,9 +360,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763444292821247288}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 5
   m_Drag: 0.05
-  m_AngularDrag: 0.05
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -768,9 +768,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763444293148414630}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 15
   m_Drag: 0.05
-  m_AngularDrag: 0.05
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1028,9 +1028,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763444293570929624}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 15
   m_Drag: 0.05
-  m_AngularDrag: 0.05
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1452,8 +1452,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b54c46e14012da478a59feff44c2743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetFootZDistance: 5
+  penaltyUnderY: 0.5
+  totalDistanceTraveled: 0
   timeSinceStart: 0
   onGroundScore: 0
+  fallingOverPentalty: 0
+  worstStandingZ: 0
+  stepByStepScore: 0
+  veeringPenalty: 0
+  timeSpentMoving: 0
+  lastBestGroundedFoot: {fileID: 0}
+  lastBestGroundedFootZ: 0
+  distanceMultiplier: 2
+  avgSpeedMultiplier: 0.2
+  stayAliveMultiplier: 0.2
+  onGroundMultiplier: 2
+  fallingOverPenaltyMultiplier: 0.5
+  stepByStepMultiplier: 3
+  veeringPenaltyMultiplier: 1
   hips: {fileID: 763444292472722394}
   thighR: {fileID: 763444293570929628}
   shinR: {fileID: 763444294087815672}
@@ -1461,11 +1478,6 @@ MonoBehaviour:
   thighL: {fileID: 763444293148414650}
   shinL: {fileID: 763444294506763472}
   footL: {fileID: 763444292447538800}
-  distanceMultiplier: 1.4
-  avgSpeedMultiplier: 0.2
-  stayAliveMultiplier: 0.5
-  onGroundMultiplier: 1.5
-  overallFitness: 0
 --- !u!114 &5833027996922013758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,9 +1538,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763444294087815652}
   serializedVersion: 2
-  m_Mass: 5
+  m_Mass: 8
   m_Drag: 0.05
-  m_AngularDrag: 0.05
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1786,9 +1798,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763444294506763484}
   serializedVersion: 2
-  m_Mass: 5
+  m_Mass: 8
   m_Drag: 0.05
-  m_AngularDrag: 0.05
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
